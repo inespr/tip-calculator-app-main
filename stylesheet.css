@@ -1,22 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
+*{
+    font-family: "Space Mono";
+}
+
 body{
     background-color: hsl(185, 41%, 84%);
-    font-family: "Space Mono";
 }
 
 h1{
     text-align: center;
+    /*Añadir separación de letras y cambiar separacion de linea*/
 }
 
 .container{
     background-color: hsl(0, 0%, 100%);
-    width: 800px;
-    margin: auto;
+    width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.elemento{
     display: flex;
     flex-direction: row;
-    padding: 40px;
-    border-radius: 20px
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number] { 
+  -webkit-appearance: none;
+  margin: 0; 
+  text-align: right;
+  width: 250px;
+}
+
+input[type=button]{
+    width: 70px;
 }
 
 
