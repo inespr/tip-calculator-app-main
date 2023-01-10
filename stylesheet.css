@@ -15,11 +15,12 @@ h1{
 
 .container{
     background-color: hsl(0, 0%, 100%);
-    width: 600px;
+    width: 900px;
     padding: 30px;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .elemento{
@@ -27,15 +28,65 @@ h1{
     flex-direction: row;
 }
 
-input[type=number]::-webkit-inner-spin-button, input[type=number] { 
-  -webkit-appearance: none;
+input[type=text]{ 
+  background-color: hsl(189, 41%, 97%);
+  border: none;
   margin: 0; 
   text-align: right;
-  width: 250px;
+  width: 345px;
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 2%;
 }
 
 input[type=button]{
-    width: 70px;
+    border: none;
+    width: 110px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 300px;
+    border-radius: 5%;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
 }
 
+.colum-1{
+    width: 400px;
+}
 
+.colum-2{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin-left: 40px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subcolum{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    align-items: center;
+   
+}
+
+.row{
+    margin-bottom: 30px;
+}
+
+input.reset{
+    background-color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    width: 350px;
+    border-radius: 5px;
+}
+
+.per-person{
+    font-size: small;
+    font-weight: bold;
+    color: hsl(186, 14%, 43%);
+}

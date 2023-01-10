@@ -13,29 +13,39 @@
   <div class="container">
     <div class="elemento">
       <div class="colum-1">
-        Bill<br>
-        <input type="number" placeholder="0"><br>
-        Select Tip %<br>
-        <input type="button" value="5%">
-        <input type="button" value="10%">
-        <input type="button" value="15%"><br>
-        <input type="button" value="25%">
-        <input type="button" value="50%">
-        <input type="button" value="Custom">
-        <br>
-        Number of People<br>
-        <input type="number" placeholder="0"><br>
+        <div class="row">
+          <p>Bill</p>
+          <input type="text" placeholder="0"><br>
+        </div>
+        <div class="row">
+          <p>Select Tip %</p>
+          <input type="button" value="5%">
+          <input type="button" value="10%">
+          <input type="button" value="15%"><br>
+          <input type="button" value="25%">
+          <input type="button" value="50%">
+          <input type="button" value="Custom">
+          <br>
+        </div>
+        <div class="row">
+          <p>Number of People</p>
+          <input type="text" placeholder="0">
+        </div>
       </div>
       <div class="colum-2">
-  
-        Tip Amount
-        / person
-  
-        Total
-        / person
-  
-        Reset
-        
+        <div class="subcolum">
+          <div class="subcolum-1">
+            <p>Tip Amount</p>
+            <p class="per-person">/ person</p>
+            <p>Total</p>
+            <p class="per-person">/ person</p>
+          </div>
+          <div class="subcolum-2">
+            <div class="result">gregreg</div>
+            <div class="result">ertgergre</div>
+          </div>
+        </div>
+        <input type="button" class="reset" value="RESET">
       </div>
     </div>
   </div>
