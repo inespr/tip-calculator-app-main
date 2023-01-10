@@ -10,6 +10,9 @@ body{
 
 h1{
     text-align: center;
+    padding: 60px;
+    letter-spacing: 10px;
+    color:hsl(183, 100%, 15%) ;
     /*Añadir separación de letras y cambiar separacion de linea*/
 }
 
@@ -28,7 +31,7 @@ h1{
     flex-direction: row;
 }
 
-input[type=text]{ 
+input[type=text]:not(.custom){ 
   background-color: hsl(189, 41%, 97%);
   border: none;
   margin: 0; 
@@ -37,6 +40,8 @@ input[type=text]{
   font-size: 24px;
   border-radius: 5px;
   padding: 2%;
+  color: hsl(183, 100%, 15%);
+  font-weight: bold;
 }
 
 input[type=button]{
@@ -44,10 +49,25 @@ input[type=button]{
     width: 110px;
     margin-bottom: 10px;
     font-size: 24px;
-    font-weight: 300px;
     border-radius: 5%;
     background-color: hsl(183, 100%, 15%);
     color: hsl(0, 0%, 100%);
+}
+
+.custom{
+    text-align: center;
+    border: none;
+    width: 107px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    border-radius: 5%;
+    background-color: hsl(189, 41%, 97%);
+}
+
+input[type=button]:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
 }
 
 .colum-1{
@@ -58,7 +78,7 @@ input[type=button]{
     background-color: hsl(183, 100%, 15%);
     color: hsl(0, 0%, 100%);
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
     margin-left: 40px;
     width: 400px;
     display: flex;
@@ -70,19 +90,30 @@ input[type=button]{
     display: flex;
     flex-direction: row;
     width: 300px;
-    align-items: center;
-   
+    align-items:inherit;
+    
 }
+
+.subcolum-2{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .row{
     margin-bottom: 30px;
 }
 
-input.reset{
+input[type=reset].reset{
+    border: none;
+    width: 110px;
+    margin-bottom: 10px;
+    font-size: 24px;
     background-color: hsl(186, 14%, 43%);
     color: hsl(183, 100%, 15%);
     width: 350px;
     border-radius: 5px;
+    margin-top: 100px;
 }
 
 .per-person{
@@ -90,3 +121,17 @@ input.reset{
     font-weight: bold;
     color: hsl(186, 14%, 43%);
 }
+
+.result{
+    padding-left: 80px;
+    padding-bottom: 30px;
+    font-size: 34px;
+    color: hsl(172, 67%, 45%);
+}
+
+.error{
+    text-align: right;
+    margin-top: -37px;
+    visibility: hidden;
+}
+

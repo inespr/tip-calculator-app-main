@@ -7,29 +7,30 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="https://fonts.google.com/specimen/Space+Mono" rel="stylesheet">
-</head>
+  <script src="stylesheet.css"></script>
+  </head>
 <body>
   <h1>SPLI<br>TTER</h1>
-  <div class="container">
+  <form class="container">
     <div class="elemento">
       <div class="colum-1">
         <div class="row">
           <p>Bill</p>
-          <input type="text" placeholder="0"><br>
+          <input type="text" placeholder="0" id="bill"><br>
         </div>
         <div class="row">
           <p>Select Tip %</p>
-          <input type="button" value="5%">
-          <input type="button" value="10%">
-          <input type="button" value="15%"><br>
-          <input type="button" value="25%">
-          <input type="button" value="50%">
-          <input type="button" value="Custom">
+          <input type="button" value="5%" id="tip5" name="tip" onclick="selectTip()">
+          <input type="button" value="10%" id="tip10"name="tip" onclick="selectTip()">
+          <input type="button" value="15%" id="tip15" name="tip" onclick="selectTip()"><br>
+          <input type="button" value="25%" id="tip25" name="tip" onclick="selectTip()">
+          <input type="button" value="50%" id="tip50" name="tip" onclick="selectTip()">
+          <input type="text" class="custom" placeholder="Custom" id="tipCustom" name="tip" onclick="selectTip()">
           <br>
         </div>
         <div class="row">
-          <p>Number of People</p>
-          <input type="text" placeholder="0">
+          <p>Number of People</p><p class="error" id="error">Can't be zero</p>
+          <input type="text" placeholder="0" id="numP" onclick="selectPeople()">
         </div>
       </div>
       <div class="colum-2">
@@ -41,13 +42,13 @@
             <p class="per-person">/ person</p>
           </div>
           <div class="subcolum-2">
-            <div class="result">gregreg</div>
-            <div class="result">ertgergre</div>
+            <div class="result" id="resultTipAmount">$0.00</div>
+            <div class="result"id="resultTotal">$0.00</div>
           </div>
         </div>
-        <input type="button" class="reset" value="RESET">
+        <input type="reset" class="reset" value="RESET">
       </div>
     </div>
-  </div>
+  </form>
 </body>
 </html>
