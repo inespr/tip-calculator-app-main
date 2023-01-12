@@ -31,7 +31,7 @@ h1{
     flex-direction: row;
 }
 
-input[type=text]:not(.custom){ 
+input[type=number]:not(.custom){ 
   background-color: hsl(189, 41%, 97%);
   border: none;
   margin: 0; 
@@ -54,7 +54,11 @@ input[type=button]{
     color: hsl(0, 0%, 100%);
 }
 
-
+input[type=button]:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
 
 .custom{
     text-align: center;
@@ -66,11 +70,6 @@ input[type=button]{
     background-color: hsl(189, 41%, 97%);
 }
 
-input[type=button]:hover{
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-    font-weight: bold;
-}
 
 .colum-1{
     width: 400px;

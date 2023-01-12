@@ -15,7 +15,7 @@
       <div class="colum-1">
         <div class="row">
           <p>Bill</p>
-          <input type="text" placeholder="0" id="bill" onchange="selectBill() "><br>
+          <input type="number" placeholder="0" id="bill" onchange="selectBill(), calculo()" min="0" pattern=""><br>
         </div>
         <div class="row">
           <p>Select Tip %</p>
@@ -24,12 +24,12 @@
           <input type="button" value="15%" id="15" name="tip" onclick="selectTip(this.id)"><br>
           <input type="button" value="25%" id="25" name="tip" onclick="selectTip(this.id)">
           <input type="button" value="50%" id="50" name="tip" onclick="selectTip(this.id)">
-          <input type="text" class="custom" placeholder="Custom" id="tipCustom" name="tipCust" onchange="selectTipCust()">
+          <input type="text" class="custom" placeholder="Custom" id="tipCustom" name="tipCust" onchange="selectTipCust(), calculo()">
           <br>
         </div>
         <div class="row">
           <p>Number of People</p><p class="error" id="error">Can't be zero</p>
-          <input type="text" placeholder="0" id="numP" onchange="selectPeople(), calculo()">
+          <input type="number" placeholder="0" id="numP" onchange="selectPeople(), calculo()" min="0">
         </div>
       </div>
       <div class="colum-2">
