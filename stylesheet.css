@@ -54,6 +54,8 @@ input[type=button]{
     color: hsl(0, 0%, 100%);
 }
 
+
+
 .custom{
     text-align: center;
     border: none;
@@ -131,6 +133,7 @@ input[type=reset].reset{
 
 .error{
     text-align: right;
+    color: red;
     margin-top: -37px;
     visibility: hidden;
 }

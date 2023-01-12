@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="https://fonts.google.com/specimen/Space+Mono" rel="stylesheet">
-  <script src="stylesheet.css"></script>
   </head>
 <body>
   <h1>SPLI<br>TTER</h1>
@@ -16,21 +15,21 @@
       <div class="colum-1">
         <div class="row">
           <p>Bill</p>
-          <input type="text" placeholder="0" id="bill"><br>
+          <input type="text" placeholder="0" id="bill" onchange="selectBill() "><br>
         </div>
         <div class="row">
           <p>Select Tip %</p>
-          <input type="button" value="5%" id="tip5" name="tip" onclick="selectTip()">
-          <input type="button" value="10%" id="tip10"name="tip" onclick="selectTip()">
-          <input type="button" value="15%" id="tip15" name="tip" onclick="selectTip()"><br>
-          <input type="button" value="25%" id="tip25" name="tip" onclick="selectTip()">
-          <input type="button" value="50%" id="tip50" name="tip" onclick="selectTip()">
-          <input type="text" class="custom" placeholder="Custom" id="tipCustom" name="tip" onclick="selectTip()">
+          <input type="button" value="5%" id="5" name="tip" onclick="selectTip(this.id)">
+          <input type="button" value="10%" id="10"name="tip" onclick="selectTip(this.id)">
+          <input type="button" value="15%" id="15" name="tip" onclick="selectTip(this.id)"><br>
+          <input type="button" value="25%" id="25" name="tip" onclick="selectTip(this.id)">
+          <input type="button" value="50%" id="50" name="tip" onclick="selectTip(this.id)">
+          <input type="text" class="custom" placeholder="Custom" id="tipCustom" name="tipCust" onchange="selectTipCust()">
           <br>
         </div>
         <div class="row">
           <p>Number of People</p><p class="error" id="error">Can't be zero</p>
-          <input type="text" placeholder="0" id="numP" onclick="selectPeople()">
+          <input type="text" placeholder="0" id="numP" onchange="selectPeople(), calculo()">
         </div>
       </div>
       <div class="colum-2">
@@ -51,4 +50,5 @@
     </div>
   </form>
 </body>
+<script src="./main.js"></script>
 </html>
