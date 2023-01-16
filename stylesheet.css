@@ -6,20 +6,20 @@
 
 body{
     background-color: hsl(185, 41%, 84%);
+    width: auto;
 }
 
 h1{
     text-align: center;
-    padding: 60px;
+    padding: 1px;
     letter-spacing: 10px;
     color:hsl(183, 100%, 15%) ;
-    /*Añadir separación de letras y cambiar separacion de linea*/
 }
 
 .container{
     background-color: hsl(0, 0%, 100%);
     width: 900px;
-    padding: 30px;
+    padding: 28px;
     border-radius: 20px;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,6 @@ input[type=button]:active{
     background-color: hsl(189, 41%, 97%);
 }
 
-
 .colum-1{
     width: 400px;
 }
@@ -117,6 +116,18 @@ input[type=reset].reset{
     margin-bottom: 10px;
     font-size: 24px;
     background-color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    width: 350px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+input[type=reset].reset:active{
+    border: none;
+    width: 110px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    background-color: hsl(186, 100%, 73%);
     color: hsl(183, 100%, 15%);
     width: 350px;
     border-radius: 5px;

@@ -15,11 +15,11 @@
       <div class="colum-1">
         <div class="row">
           <p>Bill</p>
-          <input type="number" placeholder="0" id="bill" onchange="selectBill()" min="0" pattern="^[0-9]+"><br>
+          <input type="number" placeholder="0" id="bill" onchange="selectBill()" min="1" pattern="^[0-9]+"><br>
         </div>
         <div class="row">
           <p>Select Tip %</p>
-          <input type="button" value="5%" id="5" name="tip" onclick="selectTip(this.id)"><!--Modificar-->
+          <input type="button" value="5%" id="5" name="tip" onclick="selectTip(this.id)">
           <input type="button" value="10%" id="10"name="tip" onclick="selectTip(this.id)">
           <input type="button" value="15%" id="15" name="tip" onclick="selectTip(this.id)"><br>
           <input type="button" value="25%" id="25" name="tip" onclick="selectTip(this.id)">
@@ -28,7 +28,10 @@
           <br>
         </div>
         <div class="row">
-          <p>Number of People</p><p class="error" id="error">Can't be zero <br> or decimal</p>
+          <div>
+            <div>Number of People</div>
+            <div class="error" id="error">Can't be zero <br> or decimal</div>
+          </div>
           <input type="number" placeholder="0" id="numP" onchange="selectPeople(), calculo()" min="0" pattern="^[0-9]+">
         </div>
       </div>
