@@ -60,6 +60,12 @@ input[type=button]:hover{
     font-weight: bold;
 }
 
+input[type=button]:active{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+
 .custom{
     text-align: center;
     border: none;

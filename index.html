@@ -15,21 +15,21 @@
       <div class="colum-1">
         <div class="row">
           <p>Bill</p>
-          <input type="number" placeholder="0" id="bill" onchange="selectBill(), calculo()" min="0" pattern=""><br>
+          <input type="number" placeholder="0" id="bill" onchange="selectBill()" min="0" pattern="^[0-9]+"><br>
         </div>
         <div class="row">
           <p>Select Tip %</p>
-          <input type="button" value="5%" id="5" name="tip" onclick="selectTip(this.id)">
+          <input type="button" value="5%" id="5" name="tip" onclick="selectTip(this.id)"><!--Modificar-->
           <input type="button" value="10%" id="10"name="tip" onclick="selectTip(this.id)">
           <input type="button" value="15%" id="15" name="tip" onclick="selectTip(this.id)"><br>
           <input type="button" value="25%" id="25" name="tip" onclick="selectTip(this.id)">
           <input type="button" value="50%" id="50" name="tip" onclick="selectTip(this.id)">
-          <input type="text" class="custom" placeholder="Custom" id="tipCustom" name="tipCust" onchange="selectTipCust(), calculo()">
+          <input type="text" class="custom" placeholder="Custom" id="tipCustom" name="tipCust" onchange="selectTipCust()" pattern="^[0-9]+">
           <br>
         </div>
         <div class="row">
-          <p>Number of People</p><p class="error" id="error">Can't be zero</p>
-          <input type="number" placeholder="0" id="numP" onchange="selectPeople(), calculo()" min="0">
+          <p>Number of People</p><p class="error" id="error">Can't be zero <br> or decimal</p>
+          <input type="number" placeholder="0" id="numP" onchange="selectPeople(), calculo()" min="0" pattern="^[0-9]+">
         </div>
       </div>
       <div class="colum-2">
@@ -42,10 +42,10 @@
           </div>
           <div class="subcolum-2">
             <div class="result" id="resultTipAmount">$0.00</div>
-            <div class="result"id="resultTotal">$0.00</div>
+            <div class="result" id="resultTotal">$0.00</div>
           </div>
         </div>
-        <input type="reset" class="reset" value="RESET">
+        <input type="reset" class="reset" value="RESET" onclick="location.reload()">
       </div>
     </div>
   </form>
